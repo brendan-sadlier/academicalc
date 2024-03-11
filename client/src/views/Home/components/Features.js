@@ -13,10 +13,13 @@ import CalculateIcon from '@mui/icons-material/Calculate';
 import PendingActionsIcon from '@mui/icons-material/PendingActions';
 import ViewQuiltRoundedIcon from '@mui/icons-material/ViewQuiltRounded';
 
+import { useNavigate } from "react-router-dom";
+
 const items = [
   {
     icon: <CalculateIcon />,
     title: 'GPA Calculator',
+    link: '/calculate-gpa',
     description:
       'Calculate your GPA with our easy to use tool.',
     // imageLight: 'url("/static/images/templates/templates-images/dash-light.png")', // TODO: Add these images
@@ -27,6 +30,7 @@ const items = [
   {
     icon: <PendingActionsIcon />,
     title: 'GPA Planning Calculator',
+    link: '/',
     description:
       'Plan your GPA with our easy to use tool.',
     imageLight: 'url(https://placehold.co/1680x2000)', // Placeholder
@@ -36,6 +40,7 @@ const items = [
   {
     icon: <ViewQuiltRoundedIcon />,
     title: 'Dashboard',
+    link: '/',
     description:
       'View your GPA and plan your future with our dashboard.',
     imageLight: 'url(https://placehold.co/1680x2000)', // Placeholder
@@ -44,6 +49,9 @@ const items = [
 ];
 
 export default function Features() {
+
+  const navigate = useNavigate();
+
   const [selectedItemIndex, setSelectedItemIndex] = React.useState(0);
 
   const handleItemClick = (index) => {
@@ -52,22 +60,25 @@ export default function Features() {
 
   const selectedFeature = items[selectedItemIndex];
 
+  const navigateToPage = (link) => {
+    navigate(link);
+  };
+
   return (
     <Container id="features" sx={{ py: { xs: 8, sm: 16 } }}>
       <Grid container spacing={6}>
         <Grid item xs={12} md={6}>
           <div>
             <Typography component="h2" variant="h4" color="text.primary">
-              Product features
+              Our Tools
             </Typography>
             <Typography
               variant="body1"
               color="text.secondary"
               sx={{ mb: { xs: 2, sm: 4 } }}
             >
-              Here you can provide a brief overview of the key features of the
-              product. For example, you could list the number of features, the types
-              of features, add-ons, or the benefits of the features.
+              Explore our student focused tools, so you can focus on the more important
+              things in your life.
             </Typography>
           </div>
           <Grid container item gap={1} sx={{ display: { xs: 'auto', sm: 'none' } }}>
@@ -124,6 +135,7 @@ export default function Features() {
                 {selectedFeature.description}
               </Typography>
               <Link
+                href={selectedFeature.link}
                 color="primary"
                 variant="body2"
                 fontWeight="bold"
@@ -134,7 +146,7 @@ export default function Features() {
                   '&:hover > svg': { transform: 'translateX(2px)' },
                 }}
               >
-                <span>Learn more</span>
+                <span>Try it out</span>
                 <ChevronRightRoundedIcon
                   fontSize="small"
                   sx={{ mt: '1px', ml: '2px' }}
@@ -216,6 +228,7 @@ export default function Features() {
                     </Typography>
                     <Link
                       color="primary"
+                      href={selectedFeature.link}
                       variant="body2"
                       fontWeight="bold"
                       sx={{
@@ -228,7 +241,7 @@ export default function Features() {
                         event.stopPropagation();
                       }}
                     >
-                      <span>Learn more</span>
+                      <span>Try it out</span>
                       <ChevronRightRoundedIcon
                         fontSize="small"
                         sx={{ mt: '1px', ml: '2px' }}

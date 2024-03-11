@@ -1,8 +1,8 @@
-import Navbar from "components/Navbar/Navbar";
 import React, { useState } from "react";
 import CustomTheme from "CustomTheme";
 import { Box, CssBaseline, createTheme } from "@mui/material";
 import { ThemeProvider } from "@emotion/react";
+import Navbar from "components/Navbar/Navbar";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
 
@@ -17,16 +17,12 @@ function Home() {
     setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
   };
 
-  const toggleCustomTheme = () => {
-    setShowCustomTheme((prev) => !prev);
-  };
-
   return (
     <ThemeProvider theme={showCustomTheme ? customTheme : defaultTheme}>
       <CssBaseline />
         <Navbar mode={mode} toggleColorMode={toggleColorMode} />
         <Hero />
-        <Box sx={{ bgcolor: 'background.default' }}>
+        <Box sx={{ bgcolor: 'background.default'}}>
           <Features />
         </Box>
     </ThemeProvider>

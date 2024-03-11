@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
+import ToggleColorMode from "./components/ToggleColorMode";
 
 const logoStyle = {
   width: '140px',
@@ -69,8 +70,8 @@ function Navbar({ mode, toggleColorMode }) {
               borderColor: 'divider',
               boxShadow:
                 theme.palette.mode === 'light'
-                  ? `0 0 1px rgba(85, 166, 246, 0.1), 1px 1.5px 2px -1px rgba(85, 166, 246, 0.15), 4px 4px 12px -2.5px rgba(85, 166, 246, 0.15)`
-                  : '0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)',
+                  ? `0 0 1px rgba(114, 176, 29, 0.1), 1px 1.5px 2px -1px rgba(114, 176, 29, 0.15), 4px 4px 12px -2.5px rgba(114, 176, 29, 0.15)`
+                  : '0 0 1px rgba(63, 125, 32, 0.7), 1px 1.5px 2px -1px rgba(63, 125, 32, 0.65), 4px 4px 12px -2.5px rgba(63, 125, 32, 0.65)',
             })}
           >
             <Box
@@ -93,7 +94,7 @@ function Navbar({ mode, toggleColorMode }) {
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
-                    Features
+                    Tools
                   </Typography>
                 </MenuItem>
               </Box>
@@ -105,24 +106,23 @@ function Navbar({ mode, toggleColorMode }) {
                 alignItems: 'center',
               }}
             >
+              <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
               <Button
                 color="primary"
-                disabled="true" // TODO: remove this line
                 variant="text"
                 size="small"
                 component="a"
-                href="/material-ui/getting-started/templates/sign-in/"
+                href="/"
                 target="_blank"
               >
                 Sign in
               </Button>
               <Button
                 color="primary"
-                disabled="true" // TODO: remove this line
                 variant="contained"
                 size="small"
                 component="a"
-                href="/material-ui/getting-started/templates/sign-up/"
+                href="/"
                 target="_blank"
               >
                 Sign up
@@ -155,9 +155,10 @@ function Navbar({ mode, toggleColorMode }) {
                       flexGrow: 1,
                     }}
                   >
+                    <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
                   </Box>
                   <MenuItem onClick={() => scrollToSection('features')}>
-                    Features
+                    Tools
                   </MenuItem>
                   <Divider />
                   <MenuItem>
