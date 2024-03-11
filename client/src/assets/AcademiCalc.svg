@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 856.56 766.38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#New_Gradient_Swatch-2);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#New_Gradient_Swatch);
+      }
+
+      .cls-3 {
+        fill: url(#New_Gradient_Swatch-3);
+      }
+    </style>
+    <linearGradient id="New_Gradient_Swatch" data-name="New Gradient Swatch" x1="273.37" y1="447.26" x2="58.89" y2="661.74" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3c6e71"/>
+      <stop offset="1" stop-color="#284b63"/>
+    </linearGradient>
+    <linearGradient id="New_Gradient_Swatch-2" data-name="New Gradient Swatch" x1="412.71" y1="279.29" x2="104.02" y2="486.8" xlink:href="#New_Gradient_Swatch"/>
+    <linearGradient id="New_Gradient_Swatch-3" data-name="New Gradient Swatch" x1="815.39" y1="270.51" x2="595.88" y2="406" xlink:href="#New_Gradient_Swatch"/>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path class="cls-2" d="m0,246.6v373.78c56.55,1.85,107.36,8.57,152.33,18.01,56.23,11.8,103.47,28.07,142.12,45.07.89.39,1.84.78,2.72,1.17,88.58,39.23,131.11,81.76,131.11,81.76,0,0,7.53-415.85-428.28-519.78Z"/>
+      <path class="cls-1" d="m327.68,74.49c-24.52-12.5-49.12-23.03-73.23-31.71C119.39-5.83,0,.25,0,.25v246.35c435.8,103.93,428.28,519.78,428.28,519.78,0,0,16.16-16.16,49.25-37.67,9.4-6.13,20.26-12.71,32.38-19.45,32.7-18.2,75.27-37.75,128.32-53.94,21.28-6.5,44.3-12.41,68.94-17.5-9.88-358.04-353.81-549.54-379.5-563.33Z"/>
+      <path class="cls-3" d="m856.56.25v620.13c-55.37,1.88-105.07,8.29-149.38,17.44-6.76-244.67-169.51-411.57-280.09-497.13,0,0,1.16-.78,1.19-.76,46.37-38.16,96.41-65.97,145.36-86.2C719.93-6.79,856.56.25,856.56.25Z"/>
+    </g>
+  </g>
+</svg>

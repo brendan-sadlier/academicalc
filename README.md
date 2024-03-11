@@ -135,7 +135,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Brendan Sadlier - [@brendansadlier](https://twitter.com/brendansadlier)
 
-Project Link: [https://github.com/brendan-sadlier/acadeicalc](https://github.com/brendan-sadlier/grademaster)
+Project Link: [https://github.com/brendan-sadlier/academicalc](https://github.com/brendan-sadlier/grademaster)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
