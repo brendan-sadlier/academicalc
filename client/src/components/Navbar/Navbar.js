@@ -13,8 +13,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ToggleColorMode from "./components/ToggleColorMode";
 
 const logoStyle = {
-  width: '140px',
+  width: '35px',
   height: 'auto',
+  marginLeft: '8px',
+  marginRight: '8px',
   cursor: 'pointer'
 }
 
@@ -84,7 +86,7 @@ function Navbar({ mode, toggleColorMode }) {
               }}
             >
               <img
-                src="../../assets/AcademiCalc.png"
+                src={`${process.env.PUBLIC_URL}/AcademiCalc.png`}
                 style={logoStyle}
                 alt="logo of AcademiCalc"
               />
